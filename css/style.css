@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.container{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-column{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/*******/
+
+header{
+    min-height: 100vh;
+    background-image: url(../images/wallpaper.jpg);
+    backdrop-filter: drop-shadow(#000);
+    background-position: center;
+    background-size: cover;
+}
+
+header .menu{
+    padding: 1em 0;
+}
+
+header .menu .menu-mobile{
+    display: none;
+}
+
+header .menu .menu-mobile .button-menu img{
+    width: 3em;
+}
+
+header .menu .menu-mobile nav{
+    width: 100vw;
+    padding: 2em 0;
+    position: absolute;
+    top: -20em;
+    left: 0;
+    text-align: center;
+    margin-top: 3em;
+    background-color: #31475e;
+    transition: 0.8s;
+}
+
+header .menu .menu-mobile nav ul li:nth-child(4){
+    width: 60vw;
+    margin: 0 auto;
+}
+
+header .menu .menu-mobile .logo{
+    font-size: 1.5em;
+    padding-bottom: .5em;
+}
+
+header .menu .menu-mobile .logo span{
+    font-size: 1.2em;
+    padding-left: 1em;
+}
+
+header .menu .logo{
+    font-size: 1.5em;
+    color: #Fff;
+}
+
+header .menu nav ul li{
+    list-style-type: none;
+    padding: .5em 1em;
+}
+
+header .menu nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .menu nav ul li:nth-child(4){
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+header .header-titulo{
+    margin-top: 4em;
+    color: #Fff;
+}
+
+header .header-titulo h2{
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+header .header-titulo p{
+    max-width: 500px;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+header .header-titulo input{
+    width: 20%;
+    border-radius: 20px;
+    padding: .8em 1.3em;
+    border: 0;
+    transition: 0.5s;
+    outline: 0;
+}
+
+header .header-titulo input:focus{
+    outline: 2px solid #ff5f27;
+}
+
+header .header-titulo input[type=submit]{
+    background-color: #ff5f27;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*******/
+
+section.descricao{
+    padding: 4em 0;
+    text-align: center;
+    color: #31475e;
+}
+
+section.descricao h2{
+    font-weight: 300;
+}
+
+section.descricao h2 span{
+    font-weight: bold;
+}
+
+/*******/
+
+section.conteudo{
+    padding: 2em 0;
+}
+
+section.conteudo .part1{
+    padding: 1em 0;
+}
+
+section.conteudo .part1 .part1-texto{
+    padding: 0 1em;
+    flex: 50%;
+}
+
+section.conteudo .part1 .part1-texto h2{
+    font-weight: 500;
+}
+
+section.conteudo .part1 .part1-texto p{
+    margin-top: 1.5em;
+}
+
+section.conteudo .part1 .part1-img{
+    height: 300px;
+    flex: 40%;
+    background-image: url("../images/mockup1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section.conteudo .part2{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.part2 .part2-text{
+    width: 400px;
+    padding: 1.5em;
+    bottom: -3em;
+    left: 50%;
+    position: absolute;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 43px 100px -44px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 43px 100px -44px rgba(0,0,0,0.75);
+    box-shadow: 0px 43px 100px -44px rgba(0,0,0,0.75);
+}
+
+.part2 .part2-text p{
+    color: #31475e;
+    padding: 1em 0;
+}
+
+.part2 .part2-text h2{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/*******/
+
+section.servicos{
+    padding: 4em 0;
+}
+
+section.servicos .flex{
+    flex-wrap: wrap;
+}
+
+section.servicos .container > h2{
+    text-align: center;
+    font-weight: 400;
+}
+
+.servicos-card .single-card{
+    flex: calc(100%/4);
+    margin: 1em .5em;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(224,224, 244 ,0.5);
+    -moz-box-shadow: 0 8px 20px 0 rgba(224,224, 244 ,0.5);
+    box-shadow: 0 8px 20px 0 rgba(224,224, 244 ,0.5);
+}
+
+.servicos-card .single-card img{
+    width: 100%;
+}
+
+.servicos-card .single-card .single-card-texto{
+    padding: 1em;
+}
+
+.servicos-card .single-card h2{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.servicos-card .single-card p{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    color: #7a7a7a;
+}
+
+.servicos-card .single-card a{
+    text-decoration: none;
+    color: #31475e;
+    padding: .5em 1em;
+    border: 1px solid #31475e;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.servicos-card .single-card a:hover{
+    background-color: #31475e;
+    color: #FFf;
+}
+
+/********/
+
+section.marcas{
+    background-color: #f6f6f6;
+    padding: 5em 0;
+}
+
+section.marcas h2{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2.5em;
+}
+
+section.marcas h2 span{
+    font-weight: bold;
+}
+
+section.marcas .flex img{
+   height: 50px;
+}
+
+/*******/
+
+section.formulario{
+    padding: 1em 0;
+}
+
+section.formulario h2{
+    text-align: center;
+    padding: 1em 0;
+}
+
+section.formulario form{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section.formulario form label{
+    width: 100%;
+    align-items: center;
+    font-size: 1em;
+}
+
+section.formulario form label p{
+    width: 20%;
+}
+
+section.formulario form label input,
+section.formulario form label textarea{
+    width: 80%;
+    padding: .8em;
+    margin: 1em;
+    border: 1px solid #7a7a7a;
+    outline: 0;
+}
+
+section.formulario form label textarea{
+    resize: none;
+    height: 30vh;
+}
+
+section.formulario form input[type=submit]{
+    cursor: pointer;
+    margin: 3em auto;
+    background-color: #ff5f27;
+    color: #fff;
+    border: 0;
+    border-radius: 12px;
+    padding: 1em 4em;
+    transition: 0.3s;
+}
+
+section.formulario form input[type=submit]:hover{
+    background-color: #f14f14;
+}
+
+footer{
+    text-align: center;
+    padding: 2em 0;
+    color: #FFF;
+    background-color: #ff5f27;
+}
+
+@media screen and (max-width: 760px) {
+
+    section.conteudo .flex{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    header .menu .menu-desktop{
+        display: none;
+    }
+
+    header .menu .menu-mobile{
+        display: inline;
+    }
+
+    header .header-titulo input{
+        width: 80%;
+        margin: 1em auto;
+        text-align: center;
+    }
+
+    /*******/
+
+    section.conteudo .part1{
+        text-align: center;
+    }
+
+    section.conteudo .part1 .part1-img{
+        width: 80%;
+        margin: 0 auto;
+        flex: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .part2 .part2-text{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+    }
+
+    /*******/
+
+    .servicos-card .single-card{
+        flex: content;
+    }
+
+    /*******/
+
+    section.marcas .flex{
+        flex-direction: column;
+    }
+
+    section.marcas .flex img{
+        width: auto;
+        height: auto;
+        margin: 2em auto;
+    }
+
+    /********/
+
+    section.formulario form label{
+        flex-direction: column;
+    }
+
+    section.formulario form label p{
+        width: 100%;
+    }
+    
+    section.formulario form label input,
+    section.formulario form label textarea{
+        width: 100%;
+        padding: .8em;
+        margin: 1em;
+        border: 1px solid #7a7a7a;
+        outline: 0;
+    }
+    
+    section.formulario form label textarea{
+        resize: none;
+        height: 30vh;
+    }
+
+}
